@@ -1,0 +1,75 @@
+﻿@page
+@model MomAndChildren.RazorWebApp.Pages.CategoryPage.CreateModel
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Category</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Category.CategoryName" class="control-label"></label>
+                <input asp-for="Category.CategoryName" class="form-control" />
+                <span asp-validation-for="Category.CategoryName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Category.Description" class="control-label"></label>
+                <input asp-for="Category.Description" class="form-control" />
+                <span asp-validation-for="Category.Description" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Category.Status" class="control-label"></label>
+                <select asp-for="Category.Status" asp-items="Model.CategoryStatusOptions" class="form-control"></select>
+                <span asp-validation-for="Category.Status" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Category.Image" class="control-label"></label>
+                <input asp-for="Category.Image" class="form-control" />
+                <span asp-validation-for="Category.Image" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Category.Note" class="control-label"></label>
+                <input asp-for="Category.Note" class="form-control" />
+                <span asp-validation-for="Category.Note" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Category.CreateBy" class="control-label"></label>
+                <input asp-for="Category.CreateBy" class="form-control" />
+                <span asp-validation-for="Category.CreateBy" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Category.CreateAt" class="control-label"></label>
+                <input asp-for="Category.CreateAt" class="form-control" />
+                <span asp-validation-for="Category.CreateAt" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Category.UpdateBy" class="control-label"></label>
+                <input asp-for="Category.UpdateBy" class="form-control" />
+                <span asp-validation-for="Category.UpdateBy" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Category.UpdateAt" class="control-label"></label>
+                <input asp-for="Category.UpdateAt" class="form-control" />
+                <span asp-validation-for="Category.UpdateAt" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

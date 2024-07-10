@@ -1,0 +1,274 @@
+﻿@page
+@model MomAndChildren.RazorWebApp.Pages.ProductModel
+@{
+    ViewData["Title"] = "Product page";
+    var products = Model.Products;
+}
+<div class="text-center">
+    <h1 class="display-6">Product management</h1>
+</div>
+<div class="row">
+    <div class="col-md-12 text-end">
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addProductModal">
+            Add Product
+        </button>
+    </div>
+</div>
+
+@if (products != null && products.Any())
+{
+<form method="post">
+    <table class="table table-striped table-bordered table-hover">
+        <thead>
+            <tr>
+                <th>ProductId</th>
+                <th>ProductName</th>
+                <th>Price</th>
+                <th>Description</th>
+                <th>Brand</th>
+                <th>Category</th>
+            </tr>
+        </thead>
+        <tbody class="tblcategoryList">
+            @if (products.Count > 0)
+            {
+                foreach (var product in products)
+                {
+                    <tr>
+                        <td>@product.ProductId</td>
+                        <td>@product.ProductName</td>
+                        <td>@product.Price</td>
+                        <td>@product.Description</td>
+                        <td>@product.Brand.BrandName</td>
+                        <td>@product.Category.CategoryName</td>
+                        <td>
+                            <div>
+                                <button type="submit" formaction="/Product?handler=Delete&productId=@product.ProductId" class="btn btn-danger">Delete</button>
+                                <button type="submit" formaction="/Product?handler=Update&productId=@product.ProductId" class="btn btn-primary">Update</button>
+                            </div>
+                        </td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+    <button type="button" id="btnUpdate" class="btn btn-primary" onclick="enableEditing()">Update</button>
+    <button type="submit" id="btnSave" class="btn btn-success d-none">Save</button>
+</form>
+}
+else
+{
+    <div class="alert alert-info text-center" role="alert">
+        No product found.
+    </div>
+}
+
+<!-- Modal -->
+<div class="modal fade" id="addProductModal" tabindex="-1" aria-labelledby="addProductModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="addProductModalLabel">Add Product</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="addProducToDBForm" method="post" asp-page-handler="addProduct" onsubmit="return validateAddProductForm()">
+                    <div class="form-group">
+                        <label for="ProductName">ProductName</label>
+                        <input id="ProductName" name="ProductName" class="form-control" type="text" />
+                        <span id="productNameError" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="Status">Status</label>
+                        <input id="Status" name="Status" class="form-control" type="number" min="0" max="1" />
+                        <span id="statusError" class="text-danger"></span>
+                    </div><div class="form-group">
+                        <label for="ExpireDate">ExpireDate</label>
+                        <input id="ExpireDate" name="ExpireDate" class="form-control" type="date"/>
+                        <span id="expireDateError" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="ManufacturingDate">ManufacturingDate</label>
+                        <input id="ManufacturingDate" name="ManufacturingDate" class="form-control" type="date"/>
+                        <span id="manufacturingDateError" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="Quantity">Quantity</label>
+                        <input id="Quantity" name="Quantity" class="form-control" type="number" min="1" />
+                        <span id="quantityError" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="Price">Price</label>
+                        <input id="Price" name="Price" class="form-control" type="number" step="0.1" min="1" />
+                        <span id="priceError" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="Description">Description</label>
+                        <input id="Description" name="Description" class="form-control" type="text" />
+                        <span id="descriptionError" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="BrandId">Brand</label>
+                        <select id="BrandId" name="BrandId" class="form-control">
+                            <option value="0">Select a brand</option>
+                            @foreach (var product in products)
+                            {
+                                <option value="@product.Brand.BrandId">@product.Brand.BrandName</option>
+                            }
+                        </select>
+                        <span id="brandIdError" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="CategoryId">Category</label>
+                        <select id="CategoryId" name="CategoryId" class="form-control">
+                            <option value="0">Select a category</option>
+                            @foreach (var product in products)
+                            {
+                                <option value="@product.Category.CategoryId">@product.Category.CategoryName</option>
+                            }
+                        </select>
+                        <span id="categoryIdError" class="text-danger"></span>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-primary">Add to Cart</button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        // function enableEditing() {
+        //     document.querySelectorAll('input[type="number"]').forEach(input => {
+        //         input.classList.remove('d-none');
+        //     });
+        //     document.querySelectorAll('.quantity-display').forEach(span => {
+        //         span.classList.add('d-none');
+        //     });
+        //     document.getElementById('btnUpdate').classList.add('d-none');
+        //     document.getElementById('btnSave').classList.remove('d-none');
+        // }
+
+        function validateAddProductForm() {
+            var isValid = true;
+            var productId = document.getElementById('ProductId').value;
+            var productName = document.getElementById('ProductName').value;
+            var status = document.getElementById('Status').value;
+            var expireDate = document.getElementById('ExpireDate').value;
+            var manufacturingDate = document.getElementById('ManufacturingDate').value;
+            var quantity = document.getElementById('Quantity').value;
+            var price = document.getElementById('Price').value;
+            var description = document.getElementById('Description').value;
+            var brandId = document.getElementById('BrandId').value;
+            var categoryId = document.getElementById('CategoryId').value;
+
+            var productIdError = document.getElementById('productIdError');
+            var productNameError = document.getElementById('productNameError');
+            var statusError = document.getElementById('statusError');
+            var expireDateError = document.getElementById('expireDateError');
+            var manufacturingDateError = document.getElementById('manufacturingDateError');
+            var quantityError = document.getElementById('quantityError');
+            var priceError = document.getElementById('priceError');
+            var descriptionError = document.getElementById('descriptionError');
+            var brandIdError = document.getElementById('brandIdError');
+            var categoryIdError = document.getElementById('categoryId');
+
+            if (productId == "0") {
+                productIdError.innerText = "Please select a valid product.";
+                isValid = false;
+            } else {
+                productIdError.innerText = "";
+            }
+
+            if (productName == "") {
+                productNameError.innerText = "Product name is required.";
+                isValid = false;
+            } else {
+                productNameError.innerText = "";
+            }
+
+            if (status == "") {
+                statusError.innerText = "Status is required.";
+                isValid = false;
+            } else {
+                statusError.innerText = "";
+            }
+
+            if (expireDate == "") {
+                expireDateError.innerText = "Expire date is required.";
+                isValid = false;
+            } else {
+                expireDateError.innerText = "";
+            }
+
+            if (manufacturingDate == "") {
+                manufacturingDateError.innerText = "Manufacturing date is required.";
+                isValid = false;
+            } else {
+                manufacturingDateError.innerText = "";
+            }
+
+            if (quantity < 1) {
+                quantityError.innerText = "Quantity must be at least 1.";
+                isValid = false;
+            } else {
+                quantityError.innerText = "";
+            }
+
+            if (quantity == "") {
+                quantityError.innerText = "Quantity is required.";
+                isValid = false;
+            } else {
+                quantityError.innerText = "";
+            }
+
+            if (price == "") {
+                priceError.innerText = "Price is required.";
+                isValid = false;
+            } else {
+                priceError.innerText = "";
+            }
+
+            if (description == "") {
+                descriptionError.innerText = "Description is required.";
+                isValid = false;
+            } else {
+                descriptionError.innerText = "";
+            }
+
+            if (brandId == "0") {
+                brandIdError.innerText = "Please select a valid brand.";
+                isValid = false;
+            } else {
+                brandIdError.innerText = "";
+            }
+
+            if (categoryId == "0") {
+                categoryIdError.innerText = "Please select a valid category.";
+                isValid = false;
+            } else {
+                categoryIdError.innerText = "";
+            }
+
+            return isValid;
+        }
+
+        function validateAddOrderIdForm() {
+            var isValid = true;
+            var orderId = document.getElementById('OrderId').value;
+
+            var orderIdError = document.getElementById('orderIdError');
+
+            if (orderId == "0") {
+                orderIdError.innerText = "Please select a valid orderId.";
+                isValid = false;
+            } else {
+                orderIdError.innerText = "";
+            }
+            return isValid;
+        }
+    </script>
+}

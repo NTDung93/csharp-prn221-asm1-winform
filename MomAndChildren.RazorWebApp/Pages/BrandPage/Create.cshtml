@@ -1,0 +1,74 @@
+﻿@page
+@model MomAndChildren.RazorWebApp.Pages.BrandPage.CreateModel
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Brand</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Brand.BrandName" class="control-label"></label>
+                <input asp-for="Brand.BrandName" class="form-control" />
+                <span asp-validation-for="Brand.BrandName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Brand.Description" class="control-label"></label>
+                <input asp-for="Brand.Description" class="form-control" />
+                <span asp-validation-for="Brand.Description" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Brand.Status" class="control-label"></label>
+                <select asp-for="Brand.Status" asp-items="Model.BrandStatusOptions" class="form-control"></select>
+                <span asp-validation-for="Brand.Status" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Brand.Image" class="control-label"></label>
+                <input asp-for="Brand.Image" class="form-control" />
+                <span asp-validation-for="Brand.Image" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Brand.Note" class="control-label"></label>
+                <input asp-for="Brand.Note" class="form-control" />
+                <span asp-validation-for="Brand.Note" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Brand.CreateBy" class="control-label"></label>
+                <input asp-for="Brand.CreateBy" class="form-control" />
+                <span asp-validation-for="Brand.CreateBy" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Brand.CreateAt" class="control-label"></label>
+                <input asp-for="Brand.CreateAt" class="form-control" />
+                <span asp-validation-for="Brand.CreateAt" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Brand.UpdateBy" class="control-label"></label>
+                <input asp-for="Brand.UpdateBy" class="form-control" />
+                <span asp-validation-for="Brand.UpdateBy" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Brand.UpdateAt" class="control-label"></label>
+                <input asp-for="Brand.UpdateAt" class="form-control" />
+                <span asp-validation-for="Brand.UpdateAt" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

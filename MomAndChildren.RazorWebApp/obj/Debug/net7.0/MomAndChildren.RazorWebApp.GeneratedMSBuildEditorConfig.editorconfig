@@ -1,0 +1,159 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = MomAndChildren.RazorWebApp
+build_property.RootNamespace = MomAndChildren.RazorWebApp
+build_property.ProjectDir = C:\Users\dungtiennguyen\Downloads\assignment-prn221\Net1710_221_ASM1_SE171710_NguyenTienDung\MomAndChildren.RazorWebApp\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\dungtiennguyen\Downloads\assignment-prn221\Net1710_221_ASM1_SE171710_NguyenTienDung\MomAndChildren.RazorWebApp
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/dungtiennguyen/Downloads/assignment-prn221/Net1710_221_ASM1_SE171710_NguyenTienDung/MomAndChildren.RazorWebApp/Pages/BrandPage/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQnJhbmRQYWdlXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dungtiennguyen/Downloads/assignment-prn221/Net1710_221_ASM1_SE171710_NguyenTienDung/MomAndChildren.RazorWebApp/Pages/BrandPage/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQnJhbmRQYWdlXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dungtiennguyen/Downloads/assignment-prn221/Net1710_221_ASM1_SE171710_NguyenTienDung/MomAndChildren.RazorWebApp/Pages/BrandPage/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQnJhbmRQYWdlXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dungtiennguyen/Downloads/assignment-prn221/Net1710_221_ASM1_SE171710_NguyenTienDung/MomAndChildren.RazorWebApp/Pages/BrandPage/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQnJhbmRQYWdlXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dungtiennguyen/Downloads/assignment-prn221/Net1710_221_ASM1_SE171710_NguyenTienDung/MomAndChildren.RazorWebApp/Pages/BrandPage/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQnJhbmRQYWdlXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dungtiennguyen/Downloads/assignment-prn221/Net1710_221_ASM1_SE171710_NguyenTienDung/MomAndChildren.RazorWebApp/Pages/CategoryPage/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2F0ZWdvcnlQYWdlXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dungtiennguyen/Downloads/assignment-prn221/Net1710_221_ASM1_SE171710_NguyenTienDung/MomAndChildren.RazorWebApp/Pages/CategoryPage/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2F0ZWdvcnlQYWdlXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dungtiennguyen/Downloads/assignment-prn221/Net1710_221_ASM1_SE171710_NguyenTienDung/MomAndChildren.RazorWebApp/Pages/CategoryPage/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2F0ZWdvcnlQYWdlXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dungtiennguyen/Downloads/assignment-prn221/Net1710_221_ASM1_SE171710_NguyenTienDung/MomAndChildren.RazorWebApp/Pages/CategoryPage/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2F0ZWdvcnlQYWdlXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dungtiennguyen/Downloads/assignment-prn221/Net1710_221_ASM1_SE171710_NguyenTienDung/MomAndChildren.RazorWebApp/Pages/CategoryPage/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2F0ZWdvcnlQYWdlXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dungtiennguyen/Downloads/assignment-prn221/Net1710_221_ASM1_SE171710_NguyenTienDung/MomAndChildren.RazorWebApp/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dungtiennguyen/Downloads/assignment-prn221/Net1710_221_ASM1_SE171710_NguyenTienDung/MomAndChildren.RazorWebApp/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dungtiennguyen/Downloads/assignment-prn221/Net1710_221_ASM1_SE171710_NguyenTienDung/MomAndChildren.RazorWebApp/Pages/Order.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT3JkZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dungtiennguyen/Downloads/assignment-prn221/Net1710_221_ASM1_SE171710_NguyenTienDung/MomAndChildren.RazorWebApp/Pages/OrderDetailPage/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT3JkZXJEZXRhaWxQYWdlXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dungtiennguyen/Downloads/assignment-prn221/Net1710_221_ASM1_SE171710_NguyenTienDung/MomAndChildren.RazorWebApp/Pages/OrderDetailPage/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT3JkZXJEZXRhaWxQYWdlXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dungtiennguyen/Downloads/assignment-prn221/Net1710_221_ASM1_SE171710_NguyenTienDung/MomAndChildren.RazorWebApp/Pages/OrderDetailPage/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT3JkZXJEZXRhaWxQYWdlXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dungtiennguyen/Downloads/assignment-prn221/Net1710_221_ASM1_SE171710_NguyenTienDung/MomAndChildren.RazorWebApp/Pages/OrderDetailPage/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT3JkZXJEZXRhaWxQYWdlXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dungtiennguyen/Downloads/assignment-prn221/Net1710_221_ASM1_SE171710_NguyenTienDung/MomAndChildren.RazorWebApp/Pages/OrderDetailPage/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT3JkZXJEZXRhaWxQYWdlXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dungtiennguyen/Downloads/assignment-prn221/Net1710_221_ASM1_SE171710_NguyenTienDung/MomAndChildren.RazorWebApp/Pages/Payment.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGF5bWVudC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dungtiennguyen/Downloads/assignment-prn221/Net1710_221_ASM1_SE171710_NguyenTienDung/MomAndChildren.RazorWebApp/Pages/PaymentPage/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGF5bWVudFBhZ2VcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dungtiennguyen/Downloads/assignment-prn221/Net1710_221_ASM1_SE171710_NguyenTienDung/MomAndChildren.RazorWebApp/Pages/PaymentPage/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGF5bWVudFBhZ2VcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dungtiennguyen/Downloads/assignment-prn221/Net1710_221_ASM1_SE171710_NguyenTienDung/MomAndChildren.RazorWebApp/Pages/PaymentPage/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGF5bWVudFBhZ2VcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dungtiennguyen/Downloads/assignment-prn221/Net1710_221_ASM1_SE171710_NguyenTienDung/MomAndChildren.RazorWebApp/Pages/PaymentPage/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGF5bWVudFBhZ2VcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dungtiennguyen/Downloads/assignment-prn221/Net1710_221_ASM1_SE171710_NguyenTienDung/MomAndChildren.RazorWebApp/Pages/PaymentPage/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGF5bWVudFBhZ2VcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dungtiennguyen/Downloads/assignment-prn221/Net1710_221_ASM1_SE171710_NguyenTienDung/MomAndChildren.RazorWebApp/Pages/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dungtiennguyen/Downloads/assignment-prn221/Net1710_221_ASM1_SE171710_NguyenTienDung/MomAndChildren.RazorWebApp/Pages/Product.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dungtiennguyen/Downloads/assignment-prn221/Net1710_221_ASM1_SE171710_NguyenTienDung/MomAndChildren.RazorWebApp/Pages/ProductPage/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdFBhZ2VcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dungtiennguyen/Downloads/assignment-prn221/Net1710_221_ASM1_SE171710_NguyenTienDung/MomAndChildren.RazorWebApp/Pages/ProductPage/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdFBhZ2VcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dungtiennguyen/Downloads/assignment-prn221/Net1710_221_ASM1_SE171710_NguyenTienDung/MomAndChildren.RazorWebApp/Pages/ProductPage/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdFBhZ2VcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dungtiennguyen/Downloads/assignment-prn221/Net1710_221_ASM1_SE171710_NguyenTienDung/MomAndChildren.RazorWebApp/Pages/ProductPage/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdFBhZ2VcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dungtiennguyen/Downloads/assignment-prn221/Net1710_221_ASM1_SE171710_NguyenTienDung/MomAndChildren.RazorWebApp/Pages/ProductPage/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdFBhZ2VcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dungtiennguyen/Downloads/assignment-prn221/Net1710_221_ASM1_SE171710_NguyenTienDung/MomAndChildren.RazorWebApp/Pages/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dungtiennguyen/Downloads/assignment-prn221/Net1710_221_ASM1_SE171710_NguyenTienDung/MomAndChildren.RazorWebApp/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dungtiennguyen/Downloads/assignment-prn221/Net1710_221_ASM1_SE171710_NguyenTienDung/MomAndChildren.RazorWebApp/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dungtiennguyen/Downloads/assignment-prn221/Net1710_221_ASM1_SE171710_NguyenTienDung/MomAndChildren.RazorWebApp/Pages/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-jq1nxq3j8a

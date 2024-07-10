@@ -1,0 +1,106 @@
+﻿@page
+@model MomAndChildren.RazorWebApp.Pages.BrandPage.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+
+<form method="get">
+    <div class="form-group">
+        <label for="searchTerm">Search Brand:</label>
+        <input style="margin: 0 15px 0 10px" type="text" class="form-control" id="searchTerm" name="searchTerm" placeholder="Enter Name or Description or Note or CreateBy or UpdateBy">
+        <button type="submit" class="btn btn-primary">Search</button>
+    </div>
+    
+</form>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Brand.First().BrandId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Brand.First().BrandName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Brand.First().Description)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Brand.First().Status)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Brand.First().Image)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Brand.First().Note)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Brand.First().CreateBy)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Brand.First().CreateAt)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Brand.First().UpdateBy)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Brand.First().UpdateAt)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Brand) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.BrandId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BrandName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Description)
+            </td>
+            <td>
+                    @if (item.Status == 1)
+                    {
+                        <span>Active</span>
+                    }
+                    @if (item.Status == 0)
+                    {
+                        <span>Inactive</span>
+                    }
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Image)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Note)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CreateBy)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CreateAt)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UpdateBy)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UpdateAt)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.BrandId">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.BrandId">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.BrandId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

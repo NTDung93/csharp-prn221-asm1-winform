@@ -1,0 +1,84 @@
+﻿@page
+@model MomAndChildren.RazorWebApp.Pages.PaymentPage.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Payment[0].PaymentMethod)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Payment[0].Status)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Payment[0].PaymentDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Payment[0].CreateAt)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Payment[0].UpdateAt)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Payment[0].Note)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Payment[0].BillingAddress)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Payment[0].Currency)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Payment[0].Order)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Payment) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.PaymentMethod)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Status)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PaymentDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CreateAt)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UpdateAt)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Note)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BillingAddress)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Currency)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Order.OrderId)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.PaymentId">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.PaymentId">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.PaymentId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
